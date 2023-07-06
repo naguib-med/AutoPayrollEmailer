@@ -59,8 +59,20 @@ async function envoyerPaies() {
                 const firstName = parts[parts.length - 1].split('.')[0];
 
                 for (const employee of employees) {
-                    const destinataire = employee.email;
-                    await envoyerFichePaie(destinataire, cheminFichier, month, year, firstName, lastName);
+                    if (
+                        employee.lastName.toLowerCase() === lastName.toLowerCase() &&
+                        employee.firstName.toLowerCase() === firstName.toLowerCase()
+                    ) {
+                        const destinataire = employee.email;
+                        await envoyerFichePaie(
+                            destinataire,
+                            cheminFichier,
+                            month,
+                            year,
+                            firstName,
+                            lastName
+                        );
+                    }
                 }
             }
         }
