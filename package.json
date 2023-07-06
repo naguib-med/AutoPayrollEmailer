@@ -1,0 +1,26 @@
+{
+  "name": "autopayrollemailer",
+  "version": "1.0.0",
+  "description": "AutoPayrollEmailer est un projet d'automatisation qui vise à simplifier et à accélérer le processus d'envoi des fiches de paie aux employés d'une entreprise. Ce projet utilise JavaScript pour rechercher et envoyer automatiquement les fiches de paie par e-mail, en utilisant les adresses e-mail des employés.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node sendEmail.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naguib-med/AutoPayrollEmailer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/naguib-med/AutoPayrollEmailer/issues"
+  },
+  "homepage": "https://github.com/naguib-med/AutoPayrollEmailer#readme",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "fs": "^0.0.1-security",
+    "nodemailer": "^6.9.3"
+  }
+}
